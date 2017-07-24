@@ -29,7 +29,7 @@ function txt=call_block42(bk,pt,flag)
 
     //** set nevprt and flag for called block
     txt=[txt;
-    "start_"+funs(bk)+"=clock()*1000;"
+    "start_"+funs(bk)+"=clock();"
     "block_"+rdnom+"["+string(bk-1)+"].nevprt = "+string(pt)+";"
     "local_flag = "+string(flag)+";"]
 
